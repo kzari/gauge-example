@@ -1,0 +1,4 @@
+# Destroy Postman
+
+* Stop postgres container
+* Stop api container
