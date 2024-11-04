@@ -2,6 +2,7 @@
 
 * Post Json Catalog on Postman with instance "01", name "json-catalog" and language "pt-br".
 
+------------------------------------------------------------------------------------------------------
 ## Check if the catalog was created
 
 * Assert the catalog db instanceId "01" exists on Prometheus.
