@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"Posting Catalogs":["Specs/PostCatalog.html"]}};
+var index = {"Tags":{},"Specs":{"Posting a catalog on Postman and searching for content on Prometheus":["Specs/PostCatalog.html"]}};

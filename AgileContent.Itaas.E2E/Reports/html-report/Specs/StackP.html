@@ -51,9 +51,9 @@
         <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
     </div>
     <div class="report_test-result scenarios">
-        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">1</span></div>
+        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">3</span></div>
         <div class="fail scenario-stats" data-status="failed"><span class="value">0</span></div>
-        <div class="pass scenario-stats" data-status="passed"><span class="value">1</span></div>
+        <div class="pass scenario-stats" data-status="passed"><span class="value">3</span></div>
         <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
     </div>
   </div>
@@ -72,11 +72,11 @@
     </li>
     <li>
       <label>Total Time </label>
-      <span>00:00:44</span>
+      <span>00:00:51</span>
     </li>
     <li>
       <label>Generated On </label>
-      <span>Nov 4, 2024 at 3:13pm</span>
+      <span>Nov 1, 2024 at 1:36pm</span>
     </li>
   </ul>
 
@@ -113,12 +113,12 @@
       <div id="listOfSpecifications">
         <ul id="scenarios" class="spec-list">
         
-          <a href="PostCatalog.html">
+          <a href="StackP.html">
              
               <li class="passed spec-name">
             
               <span id="scenarioName" class="scenarioname">Posting a catalog on Postman and searching for content on Prometheus</span>
-              <span id="time" class="time">00:00:14</span>
+              <span id="time" class="time">00:00:21</span>
             </li>
           </a>
           
@@ -133,11 +133,11 @@
   <div id="specificationContainer" class="details">
     <header class="curr-spec">
       <div class="spec-head-wrapper">
-        <h3 class="spec-head" title="/home/jsouza/proj/itaas-e2e/AgileContent.Itaas.E2E/Specs/PostCatalog.spec">Posting a catalog on Postman and searching for content on Prometheus</h3>
+        <h3 class="spec-head" title="/home/jsouza/proj/itaas-e2e/AgileContent.Itaas.E2E/Specs/StackP.spec">Posting a catalog on Postman and searching for content on Prometheus</h3>
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
             <li class="fail"><span class="value">0</span><span class="txt">Failed</span></li>
-            <li class="pass"><span class="value">1</span><span class="txt">Passed</span></li>
+            <li class="pass"><span class="value">3</span><span class="txt">Passed</span></li>
             <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
           </ul>
         </div>
@@ -145,12 +145,12 @@
       <div class="spec-meta">
         <div class="spec-filename">
           <label for="specFileName">File Path</label>
-          <input id="specFileName" value="/home/jsouza/proj/itaas-e2e/AgileContent.Itaas.E2E/Specs/PostCatalog.spec" readonly/>
+          <input id="specFileName" value="/home/jsouza/proj/itaas-e2e/AgileContent.Itaas.E2E/Specs/StackP.spec" readonly/>
           <button class="clipboard-btn" data-clipboard-target="#specFileName" title="Copy to Clipboard">
               <i class="fa fa-clipboard" aria-hidden="true" title="Copy to Clipboard"></i>
           </button>
         </div>
-        <span class="time">00:00:14</span>
+        <span class="time">00:00:21</span>
       </div>
 
 	
@@ -183,9 +183,9 @@
 
 	
   <div class="scenario-head">
-    <h3 class="head borderBottom">Content is present on content/all</h3>
+    <h3 class="head borderBottom">Check if the catalog was created</h3>
     
-    <span class="time">00:00:14</span>
+    <span class="time">00:00:18</span>
 
 	
   
@@ -203,68 +203,6 @@
   
     <div class="context-step">
       
-  
-    
-  
-  <div class="step concept">
-  
-  
-    <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
-    </h5>
-  
-  <div class="step-info passed">
-  
-  <ul>
-    <li class="step">
-      <div class="step-txt">
-
-
-  <i class="fa fa-plus-square" aria-hidden="true"></i>
-  
-  
-    
-      <span>
-        Post Json Catalog on Postman with instance 
-      </span>
-    
-  
-    
-      <span class="parameter">"01"</span>
-    
-  
-    
-      <span>
-        , name 
-      </span>
-    
-  
-    
-      <span class="parameter">"json-catalog"</span>
-    
-  
-    
-      <span>
-         and language 
-      </span>
-    
-  
-    
-      <span class="parameter">"pt-br"</span>
-    
-  
-    
-      <span>
-        .
-      </span>
-    
-  
-  </div>
-
-  </li></ul></div></div>
-  <div class="concept-steps">
-  
-    
   
     
   
@@ -376,8 +314,10 @@
 
   
 
+    </div>
   
-    
+    <div class="context-step">
+      
   
     
   
@@ -439,8 +379,10 @@
 
   
 
+    </div>
   
-    
+    <div class="context-step">
+      
   
     
   
@@ -502,8 +444,366 @@
 
   
 
+    </div>
+  
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:17</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Assert the catalog db instanceId 
+      </span>
+    
+  
+    
+      <span class="parameter">"01"</span>
+    
+  
+    
+      <span>
+         exists on Prometheus.
+      </span>
+    
   
   </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+	
+	</div>
+
+      
+        
+	
+  <div class="scenario-container passed">
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Content is present on content/all</h3>
+    
+    <span class="time">00:00:01</span>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+  
+	
+
+  
+    <div class="context-step">
+      
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Given S3 buket is 
+      </span>
+    
+  
+    
+      <span class="parameter">"uux-itaas-integration-tests"</span>
+    
+  
+    
+      <span>
+        , key is 
+      </span>
+    
+  
+    
+      <span class="parameter">"Specflow/catalog-test-small.zip"</span>
+    
+  
+    
+      <span>
+        , instance is 
+      </span>
+    
+  
+    
+      <span class="parameter">"01"</span>
+    
+  
+    
+      <span>
+        , name is 
+      </span>
+    
+  
+    
+      <span class="parameter">"json-catalog"</span>
+    
+  
+    
+      <span>
+        , language is 
+      </span>
+    
+  
+    
+      <span class="parameter">"pt-br"</span>
+    
+  
+    
+      <span>
+        .
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+    </div>
+  
+    <div class="context-step">
+      
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:01</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Post Json Catalog on Postman.
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+    </div>
+  
+    <div class="context-step">
+      
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Assert Post result is 200.
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
 
   
 
@@ -524,7 +824,7 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:12</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
   <div class="step-info passed">
@@ -626,6 +926,442 @@
   
     
       <span class="parameter">"AGE173,AGE_TNONE,MOV420,MOV420959"</span>
+    
+  
+    
+      <span>
+        .
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+	
+	</div>
+
+      
+        
+	
+  <div class="scenario-container passed">
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Content MOV420959 contains child AGE_TNONE</h3>
+    
+    <span class="time">00:00:00</span>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+  
+	
+
+  
+    <div class="context-step">
+      
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Given S3 buket is 
+      </span>
+    
+  
+    
+      <span class="parameter">"uux-itaas-integration-tests"</span>
+    
+  
+    
+      <span>
+        , key is 
+      </span>
+    
+  
+    
+      <span class="parameter">"Specflow/catalog-test-small.zip"</span>
+    
+  
+    
+      <span>
+        , instance is 
+      </span>
+    
+  
+    
+      <span class="parameter">"01"</span>
+    
+  
+    
+      <span>
+        , name is 
+      </span>
+    
+  
+    
+      <span class="parameter">"json-catalog"</span>
+    
+  
+    
+      <span>
+        , language is 
+      </span>
+    
+  
+    
+      <span class="parameter">"pt-br"</span>
+    
+  
+    
+      <span>
+        .
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+    </div>
+  
+    <div class="context-step">
+      
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Post Json Catalog on Postman.
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+    </div>
+  
+    <div class="context-step">
+      
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Assert Post result is 200.
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+    </div>
+  
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Call prometheus on 
+      </span>
+    
+  
+    
+      <span class="parameter">"content/MOV420959/children"</span>
+    
+  
+    
+      <span>
+        .
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Assert the content pid list contains 
+      </span>
+    
+  
+    
+      <span class="parameter">"AGE_TNONE"</span>
     
   
     

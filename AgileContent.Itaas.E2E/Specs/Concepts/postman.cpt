@@ -1,4 +1,5 @@
-# Destroy Postman
+# Post Json Catalog on Postman with instance <intanceId>, name <name> and language <language>.
 
-* Stop postgres container
-* Stop api container
+* Given S3 buket is "uux-itaas-integration-tests", key is "Specflow/catalog-test-small.zip", instance is <intanceId>, name is <name>, language is <language>.
+* Post Json Catalog on Postman.
+* Assert Post result is 200.

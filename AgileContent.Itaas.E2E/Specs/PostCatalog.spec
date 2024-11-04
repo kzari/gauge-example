@@ -1,16 +1,17 @@
-# Posting Catalogs
+# Posting a catalog on Postman and searching for content on Prometheus
 
-## Post json catalog and check if it was created
-Post a new Json catalog to Postman and verify if the database was created.
+* Post Json Catalog on Postman with instance "01", name "json-catalog" and language "pt-br".
 
-* Given S3 buket is "uux-itaas-integration-tests", key is "postman-tests/download/little_catalog.zip", instance is "01", name is "json-catalog", language is "pt-br".
-* Post Json Catalog on Postman.
-* Assert Post result is 200.
+## Check if the catalog was created
+
 * Assert the catalog db instanceId "01" exists on Prometheus.
 
-## Post json catalog and search on Prometheus
+## Content is present on content/all
 
-* Given S3 buket is "uux-itaas-integration-tests", key is "postman-tests/download/little_catalog.zip", instance is "01", name is "json-catalog", language is "pt-br".
-* Post Json Catalog on Postman.
-* Assert Post result is 200.
 * Call prometheus on "contents/all".
+* Assert the content pid list contains "AGE173,AGE_TNONE,MOV420,MOV420959".
+
+## Content MOV420959 contains child AGE_TNONE
+
+* Call prometheus on "content/MOV420959/children".
+* Assert the content pid list contains "AGE_TNONE".

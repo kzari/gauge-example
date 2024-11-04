@@ -6,7 +6,7 @@ using Gauge.CSharp.Lib.Attribute;
 namespace AgileContent.Itaas.E2E.Hooks;
 
 public class ExecutionHooks {
-    private ContainerManager _containerManager = new();
+    private readonly ContainerManager _containerManager = new();
     private const string GetWebhookUuidPath = "/token";
     protected readonly HttpClient _client = new();
 
@@ -21,13 +21,6 @@ public class ExecutionHooks {
         SuiteDataStore.Add("webhookExternalUrl", containersInfo.WebhookHost);
         SuiteDataStore.Add("webhookUuid", await GetExternalWebhookUuid(containersInfo.WebhookHost));
         SuiteDataStore.Add("openSearchHost", containersInfo.OpenSearchHost);
-
-        // SuiteDataStore.Add("postmanUrl", "http://localhost:9601");
-        // SuiteDataStore.Add("prestigeUrl", "http://localhost:9602");
-        // SuiteDataStore.Add("webHookUrl", "https://webhook.site/a44c5ec3-33e4-4f13-8da9-e30a7621c445");
-        // SuiteDataStore.Add("webhookExternalUrl", "https://webhook.site/a44c5ec3-33e4-4f13-8da9-e30a7621c445");
-        // SuiteDataStore.Add("webhookUuid", "a44c5ec3-33e4-4f13-8da9-e30a7621c445");
-        // SuiteDataStore.Add("openSearchHost", "http://localhost:9200");
     }
 
     [AfterSuite]
